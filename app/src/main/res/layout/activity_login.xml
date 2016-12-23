@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E7E7E7"
+    tools:context="com.qf.damobobo.LoginActivity">
+    <RelativeLayout
+        android:background="@drawable/title_bg"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <ImageButton
+            android:layout_width="50dp"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_back"
+            android:onClick="myClick"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:text="@string/yonghudenglu"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="300dp"
+            android:src="@drawable/icon_login"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="-30dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:text="@string/xishuogushi"
+        android:textColor="#ABABAB"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/zhanghao"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="@string/zhanghaohint"
+            android:id="@+id/ed_userName"
+            android:textSize="20sp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/mima"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="@string/mimahint"
+            android:id="@+id/ed_pass"
+            android:textSize="20sp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <Button
+        android:onClick="myClick_login"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/title_bg"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="@string/denglu"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:layout_height="40dp" />
+    <TextView
+        android:clickable="true"
+        android:onClick="myClick_zhuce"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:text="@string/quzhuce"
+        android:textSize="10sp"
+        android:textColor="#7F97BC"
+        android:gravity="end|center_vertical"
+        android:layout_height="20dp" />
+
+
+</LinearLayout>

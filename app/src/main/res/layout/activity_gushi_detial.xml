@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    tools:context="com.qf.damobobo.GushiDetialActivity">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:background="@drawable/title_bg"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <ImageButton
+            android:layout_width="50dp"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_back"
+            android:onClick="myClick"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:text="@string/gushixiangqing"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_dot"
+            android:onClick="myClick2"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp" />
+
+
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_below="@id/relative"
+        android:id="@+id/lv_gushidetial"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="#2A2A2A"
+        android:layout_width="match_parent"
+        android:weightSum="16"
+        android:gravity="center_vertical"
+        android:layout_height="40dp">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_face"
+            android:layout_height="match_parent" />
+        <EditText
+            android:hint="@string/shuoshenme"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:textSize="20dp"
+            android:background="@drawable/bj"
+            android:layout_height="30dp" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_send"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

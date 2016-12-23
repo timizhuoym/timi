@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#262626"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/wangshi"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/icon_home"
+            android:layout_height="30dp" />
+        <TextView
+
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:text="@string/wangshizatan"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:descendantFocusability="blocksDescendants"
+        android:clickable="true"
+        android:id="@+id/wdgushi"
+
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/icon_mystory"
+            android:layout_height="30dp" />
+        <TextView
+
+
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:text="@string/wdgushi"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/jilu"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/icon_record"
+            android:layout_height="30dp" />
+        <TextView
+
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:text="@string/liulanjilu"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:descendantFocusability="blocksDescendants"
+        android:clickable="true"
+        android:id="@+id/xinxi"
+
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/icon_mine"
+            android:layout_height="30dp" />
+        <TextView
+
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:text="@string/gerenxinxi"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/shezhi"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/icon_setting"
+            android:layout_height="30dp" />
+        <TextView
+
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:text="@string/xitongset"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/back"
+        android:background="#E92222"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/back"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

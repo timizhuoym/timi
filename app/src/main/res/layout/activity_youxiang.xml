@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E7E7E7"
+    tools:context="com.qf.damobobo.YouxiangActivity">
+    <RelativeLayout
+        android:background="@drawable/title_bg"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <ImageButton
+            android:layout_width="50dp"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_back"
+            android:onClick="myClick"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:text="@string/xiugaiyouxiang"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_save"
+            android:onClick="myClick2"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:text="@string/youxiang"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/ed"
+                android:background="@null"
+                android:textColor="#898989"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv1"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#E3E3E3"
+            android:layout_height="0.5dp" />
+    </LinearLayout>
+</LinearLayout>

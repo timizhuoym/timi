@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D4D4D4"
+    tools:context="com.qf.damobobo.MyGushiActivity">
+    <RelativeLayout
+        android:background="@drawable/title_bg"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <ImageButton
+            android:layout_width="50dp"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_back"
+            android:onClick="myClick_bac"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:text="@string/wdgushi"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_edit"
+            android:onClick="myClick"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:background="#353535"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/icon_bell"
+            android:scaleType="fitXY"
+            android:layout_height="30dp" />
+        <TextView
+            android:textSize="15sp"
+            android:hint="@string/xianshineirong"
+            android:textColor="#fff"
+            android:id="@+id/tv_hint"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/recylerView_mygushi"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

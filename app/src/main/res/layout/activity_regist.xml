@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E7E7E7"
+    tools:context="com.qf.damobobo.RegistActivity">
+    <RelativeLayout
+        android:background="@drawable/title_bg"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <ImageButton
+            android:layout_width="50dp"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_back"
+            android:onClick="myClick"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:text="@string/yonghuzhuce"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_portrait"
+            android:layout_width="150dp"
+            android:scaleType="fitCenter"
+            android:layout_height="150dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/zhanghao"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="@string/zhanghaohint"
+            android:id="@+id/ed_zh"
+            android:singleLine="true"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/nicheng"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="@string/nichenghint"
+            android:singleLine="true"
+            android:id="@+id/ed_userName"
+            android:textSize="20sp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/mima"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="@string/mimahint"
+            android:id="@+id/ed_pass"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <Button
+        android:onClick="myClick_rigist"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/title_bg"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="@string/zhuce"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:layout_height="40dp" />
+
+
+</LinearLayout>
